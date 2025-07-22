@@ -15,8 +15,8 @@ if [ ! -d "$WORKSPACE_DIR" ]; then
     mkdir -p "$WORKSPACE_DIR"
 fi
 
-docker run -it --rm \
+docker run -it --rm --platform linux/amd64 \
     -e DISPLAY="$DISPLAY_ARG" \
     -e TZ=Asia/Seoul \
     -v "$WORKSPACE_DIR:/home/user/etri_designkit_workspace" \
-    etri-designkit:latest
+    jaewonnam/etri_500nm_mpw_designkit:latest

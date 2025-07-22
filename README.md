@@ -13,13 +13,11 @@ https://github.com/GoodKook/ETRI-0.5um-CMOS-MPW-Std-Cell-DK
 ### Linux or macOS
 
 ```sh
-$ build.sh
 $ run.sh 192.168.0.1:0.0
 ```
 
 ### Microsoft Windows
 
 ```
-> build.bat
 > run.bat 192.168.0.1:0.0
 ```

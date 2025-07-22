@@ -20,4 +20,4 @@ docker run -it --rm ^
     -e DISPLAY=%DISPLAY_ARG% ^
     -e TZ=Asia/Seoul ^
     --volume "%WORKSPACE_DIR%:/home/user/etri_designkit_workspace" ^
-    etri-designkit:latest
+    jaewonnam/etri_500nm_mpw_designkit:latest

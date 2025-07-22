@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build . -t etri-designkit:latest
+docker build . -t jaewonnam/etri_500nm_mpw_designkit:latest
