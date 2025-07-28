@@ -3,7 +3,7 @@ FROM ubuntu:latest
 USER root
 
 RUN apt-get update && \
-    apt-get install -y adduser sudo xterm git
+    apt-get install -y adduser sudo xterm git evince vim
 RUN adduser --disabled-password --gecos "" user && \
     echo 'user:user' | chpasswd && \
     adduser user sudo && \
