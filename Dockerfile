@@ -3,7 +3,7 @@ FROM ubuntu:latest
 USER root
 
 RUN apt-get update && \
-    apt-get install -y adduser sudo xterm git evince vim
+    apt-get install -y adduser sudo xterm git evince vim wget
 RUN adduser --disabled-password --gecos "" user && \
     echo 'user:user' | chpasswd && \
     adduser user sudo && \
@@ -16,11 +16,11 @@ RUN git clone https://github.com/GoodKook/ETRI-0.5um-CMOS-MPW-Std-Cell-DK.git &&
     ln -s ETRI-0.5um-CMOS-MPW-Std-Cell-DK ~/ETRI050_DesignKit && \
     chmod +x ~/ETRI050_DesignKit/Tools/*.sh
 
-WORKDIR /home/user/ETRI050_DesignKit/Tools
-RUN ./prerequisites.sh && \
-    ./build_tools.sh
+RUN cd ./ETRI050_DesignKit/Tools && \
+    ./prerequisites.sh && \
+    ./build_tools.sh && \
+    ./ngspice44_build.sh
 
-WORKDIR /home/user
 RUN sudo apt-get install -y octave
 
 CMD ["xterm"]
