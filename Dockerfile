@@ -18,8 +18,7 @@ RUN git clone https://github.com/GoodKook/ETRI-0.5um-CMOS-MPW-Std-Cell-DK.git &&
 
 RUN cd ./ETRI050_DesignKit/Tools && \
     ./prerequisites.sh && \
-    ./build_tools.sh && \
-    ./ngspice44_build.sh
+    ./build_tools.sh
 
 RUN sudo apt-get install -y octave
 
