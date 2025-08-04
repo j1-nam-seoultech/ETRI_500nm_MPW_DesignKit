@@ -29,6 +29,9 @@ https://github.com/GoodKook/ETRI-0.5um-CMOS-MPW-Std-Cell-DK
 * [iverilog](https://github.com/steveicarus/iverilog) 12
 * [verilator](https://github.com/verilator/verilator) 5.038
 * qflow 1.4.100_etri050
+* vim
+* evince
+* octave
 
 ### Prerequirement
 
