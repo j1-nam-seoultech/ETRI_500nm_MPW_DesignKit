@@ -28,7 +28,8 @@ https://github.com/GoodKook/ETRI-0.5um-CMOS-MPW-Std-Cell-DK
 * [systemc](https://github.com/accellera-official/systemc) 3.0.1
 * [iverilog](https://github.com/steveicarus/iverilog) 12
 * [verilator](https://github.com/verilator/verilator) 5.038
-* qflow 1.4.100_etri050
+* [qucs-s](https://ra3xdh.github.io) 25.1.2
+* qflow 1.4.100\_etri050
 * vim
 * evince
 * octave

@@ -38,8 +38,11 @@ RUN ./iverilog_build.sh
 RUN ./verilator_build.sh
 RUN ./qflow-1.4.100_etri050_build.sh
 RUN sudo apt-get install -y octave
+RUN sudo apt-get install -y libqt6charts6 && \
+    wget -O /tmp/qucs.deb https://download.opensuse.org/repositories/home:/ra3xdh/xUbuntu_24.04/amd64/qucs-s_25.1.2-1_amd64.deb && \
+    sudo dpkg -i /tmp/qucs.deb && \
+    rm /tmp/qucs.deb
 
 WORKDIR /home/user
 
 CMD ["xterm"]
-
